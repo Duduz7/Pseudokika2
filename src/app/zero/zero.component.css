@@ -1,6 +1,9 @@
-#zero {background-color: lightgray; height: 91.7%; width: 100%;}
-.form1 {width: 900px; padding: 0 200px;}
-.main-title {text-align: center;}
-.crcheader {background-color: gray;}
+#zero {background-color: lightgray; height: 1200px; width: 100%;}
+.main-form {width: 900px; padding: 0 200px; margin: auto;}
+.forms {margin: 10px 0;}
+.main-title {padding: 10px;text-align: center; font-size: 36px; font-weight: 350;}
+.header {background-color: gray; background: gray !important;}
+.title {color: white; font-weight: 400; font-size: 24px;}
+.description {color: white; font-weight: 300}
 .mat-form-field {margin: 10px 0 0 10px;}
 .mat-expansion-panel-body {margin: auto;}
