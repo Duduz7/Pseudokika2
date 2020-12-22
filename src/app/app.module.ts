@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from "@angular/flex-layout";
 
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -20,11 +19,11 @@ import { ZeroComponent } from './zero/zero.component';
 @NgModule({
   declarations: [
     AppComponent, 
-    HomeComponent, ZeroComponent
+    HomeComponent, 
+    ZeroComponent, 
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatGridListModule,
@@ -35,7 +34,6 @@ import { ZeroComponent } from './zero/zero.component';
     MatInputModule,
     MatExpansionModule,
     MatFormFieldModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]

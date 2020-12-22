@@ -1,6 +1,8 @@
-#zero {background-color: lightgray; height: 1200px; width: 100%;}
+#zero {background-color: lightgray; height: 1200px;}
 .main-form {width: 900px; padding: 0 200px; margin: auto;}
-.forms {margin: 10px 0;}
+.form1 {margin: 10px 0;}
+.form2 {margin: auto;} 
+.forms-fap {float: left;}
 .main-title {padding: 10px;text-align: center; font-size: 36px; font-weight: 350;}
 .header {background-color: gray; background: gray !important;}
 .title {color: white; font-weight: 400; font-size: 24px;}
