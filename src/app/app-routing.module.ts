@@ -6,7 +6,7 @@ import { ZeroComponent } from './zero/zero.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', component: ZeroComponent},
   {path: 'home', component: HomeComponent},
   {path: 'zero', component: ZeroComponent},
 ];
