@@ -1,19 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+// Material Modules
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
-import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import {MatStepperModule} from '@angular/material/stepper';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ZeroComponent } from './zero/zero.component';
 
 @NgModule({
@@ -34,8 +41,17 @@ import { ZeroComponent } from './zero/zero.component';
     MatInputModule,
     MatExpansionModule,
     MatFormFieldModule,
+    MatStepperModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    
   ],
-  providers: [],
+  
+  providers: [{ provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));

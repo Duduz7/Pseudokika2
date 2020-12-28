@@ -15,11 +15,11 @@ $kikapp-dark: mat-dark-theme($my-themes-primary, $my-themes-accent, $my-themes-w
 
 @include angular-material-theme($kikapp-light);
 
-
 * {box-sizing: border-box;}
 .container-fluid {width: 100%}
 .row::after {content: ""; clear: both; display: table;}
 [class*="col-"] {float: left; padding: 10px;}
+
 /* col-xs- (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .col-xs-1 {width: 8.33%;}
