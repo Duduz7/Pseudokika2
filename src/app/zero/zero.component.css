@@ -6,38 +6,28 @@
 .header {background-color: gray; background: gray !important;}
 .title {color: white; font-weight: 400; font-size: 24px;}
 .description {color: white; font-weight: 300}
-.mat-form-field {margin: 10px 0 0 10px; width: 80px; font-size: 16px;}
+.mat-form-field {margin: 10px 0 0 6px; width: 100px; font-size: 16px;}
 .mat-stepper-vertical {margin-top: 8px; border-radius: 20px;}
 
-/* col-xs- (phones, 600px and down) */
-@media only screen and (max-width: 374px) {
-    .row {margin: 0 0 0 -5px;}
-}
-/* col-lg- (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .row {margin: 0 0 0 -20px;}
-
-}
-/* Media responsive
-    /* col-xs- (phones, 600px and down)
+/* Media responsive */
+    /* col-xs- (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
-
+.row {margin: 0 0 0 -5px;}
     }
-    /* col-sm- (portrait tablets and large phones, 600px and up)
+    /* col-sm- (portrait tablets and large phones, 600px and up) */ 
     @media only screen and (min-width: 600px) {
 
     }
-    /* col-md- (landscape tablets, 768px and up)
+    /* col-md- (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
 
     }
-    /* col-lg- (laptops/desktops, 992px and up)
+    /* col-lg- (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
-
+.row {margin: 0 0 0 -20px;}
 
     } 
-    /* col-xl- (large laptops and desktops, 1200px and up) 
+    /* col-xl- (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
 
-    }
-*/
+    } 
