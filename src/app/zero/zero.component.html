@@ -7,103 +7,102 @@
         <div class="row">   
             <div class="col-md-1">
             </div>
+            <!-- MatStepper -->
             <div class="col-sm-12 col-md-10">
                 <mat-vertical-stepper linear #stepper>
                     <mat-step [stepControl]="firstFormGroup">
                       <form [formGroup]="firstFormGroup">
-                        <ng-template matStepLabel>Fill out your rolled data</ng-template>
+                        <ng-template matStepLabel>Fill in your rolled data</ng-template>
                         <div class="container-fluid">
                             <!-- CRCs -->
                             <div class="row">
                                 <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
                                 </div>
                                 <div class="form1 col-sm-10 col-md-6 col-lg-8 col-xl-10">
-                                    <mat-accordion>
-                                        <mat-expansion-panel>
-                                            <mat-expansion-panel-header class="header">
-                                            <mat-panel-title class="title">
-                                                CRCs
-                                            </mat-panel-title>
-                                            <mat-panel-description class="description">
-                                                Insert your 12d100 results
-                                            </mat-panel-description>
-                                            </mat-expansion-panel-header>
-                                            <div class="row">   
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>FUE</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>INT</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>ENE</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>VAN</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>CON</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>SAB</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>MOR</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>LIV</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>DES</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>  
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>CAR</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>MOV</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                                <div class="col-xs-6 col-md-3 col-lg-2">
-                                                    <mat-form-field appearance="fill">
-                                                        <mat-label>ACE</mat-label>
-                                                        <input matInput type="number">
-                                                    </mat-form-field>
-                                                </div>
-                                            </div>         
-                                        </mat-expansion-panel>
-                                    </mat-accordion>
+                                    <mat-expansion-panel expanded hideToggle>
+                                        <mat-expansion-panel-header class="header">
+                                        <mat-panel-title class="title">
+                                            CRCs
+                                        </mat-panel-title>
+                                        <mat-panel-description class="description">
+                                            Insert your 12d100 results
+                                        </mat-panel-description>
+                                        </mat-expansion-panel-header>
+                                        <div class="row">   
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>FUE</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="FUE" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>INT</mat-label>
+                                                    <input matInput placeholder="1d100" type="number"  formControlName="INT" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>ENE</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="ENE" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>VAN</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="VAN" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>CON</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="CON" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>SAB</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="SAB" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>MOR</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="MOR" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>LIV</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="LIV" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>DES</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="DES" required>
+                                                </mat-form-field>  
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>CAR</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="CAR" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>MOV</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="MOV" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-xs-6 col-md-3 col-lg-2">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>ACE</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="ACE" required>
+                                                </mat-form-field>
+                                            </div>
+                                        </div>         
+                                    </mat-expansion-panel>
                                 </div>    
                                 <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
                                 </div>
@@ -113,8 +112,7 @@
                                 <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
                                 </div>
                                 <div class="form1 col-sm-1 col-sm-10 col-md-6 col-lg-8 col-xl-10">
-                                    <mat-accordion>
-                                        <mat-expansion-panel>
+                                        <mat-expansion-panel expanded hideToggle>
                                             <mat-expansion-panel-header class="header">
                                                 <mat-panel-title class="title">
                                                 LINs
@@ -128,31 +126,30 @@
                                                     <div class="col-xs-5 col-md-3">
                                                         <mat-form-field appearance="fill">
                                                             <mat-label>LINest</mat-label>
-                                                            <input matInput type="number">
+                                                            <input matInput placeholder= "1d18" type="number" formControlName="LINest" required>
                                                         </mat-form-field>
                                                     </div>
                                                     <div class="col-xs-5 col-md-3">
                                                         <mat-form-field appearance="fill">
                                                             <mat-label>LINfam</mat-label>
-                                                            <input matInput type="number">
+                                                            <input matInput placeholder= "1d12" type="number" formControlName="LINfam" required>
                                                         </mat-form-field>
                                                     </div>
                                                     <div class="col-xs-5 col-md-3">
                                                         <mat-form-field appearance="fill">
                                                             <mat-label>LINocu</mat-label>
-                                                            <input matInput type="number">
+                                                            <input matInput placeholder= "1d12" type="number" formControlName="LINocu" required>
                                                         </mat-form-field>
                                                     </div>
                                                     <div class="col-xs-5 col-md-3">
                                                         <mat-form-field appearance="fill">
                                                             <mat-label>LINrec</mat-label>
-                                                            <input matInput type="number">
+                                                            <input matInput placeholder= "1d12" type="number" formControlName="LINrec" required>
                                                         </mat-form-field>
                                                     </div>
                                                 </div>
                                             </div>    
                                         </mat-expansion-panel>
-                                    </mat-accordion>
                                 </div>
                                 <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
                                 </div> 
@@ -162,8 +159,7 @@
                                 <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
                                 </div>
                                 <div class="form1 col-sm-1 col-sm-10 col-md-6 col-lg-8 col-xl-10">
-                                    <mat-accordion>
-                                        <mat-expansion-panel>
+                                        <mat-expansion-panel expanded hideToggle>
                                             <mat-expansion-panel-header class="header">
                                             <mat-panel-title class="title">
                                                 SENs
@@ -179,78 +175,77 @@
                                                     <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
                                                         <mat-form-field appearance="fill">
                                                             <mat-label>Vista</mat-label>
-                                                            <input matInput type="number">
+                                                            <input matInput  matInput placeholder="1d10" type="number" formControlName="Vista" required>
                                                         </mat-form-field>
                                                     </div>
                                                     <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
                                                         <mat-form-field appearance="fill">
                                                             <mat-label>Oido</mat-label>
-                                                            <input matInput type="number">
+                                                            <input matInput placeholder="1d10" type="number" formControlName="Oido" required>
                                                         </mat-form-field>
                                                     </div>
                                                     <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
                                                         <mat-form-field appearance="fill">
                                                             <mat-label>Olfato</mat-label>
-                                                            <input matInput type="number">
+                                                            <input matInput placeholder="1d10" type="number" formControlName="Olfato" required>
                                                         </mat-form-field>
                                                     </div>
                                                     <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
                                                         <mat-form-field appearance="fill">
                                                             <mat-label>Gusto</mat-label>
-                                                            <input matInput type="number">
+                                                            <input matInput placeholder="1d10" type="number" formControlName="Gusto" required>
                                                         </mat-form-field>
                                                     </div>
                                                     <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
                                                         <mat-form-field appearance="fill">
                                                             <mat-label>Tacto</mat-label>
-                                                            <input matInput type="number">
+                                                            <input matInput placeholder="1d10" type="number" formControlName="Tacto" required>
                                                         </mat-form-field>
                                                     </div>
                                                 </div>
                                             </div>  
                                         </mat-expansion-panel>
-                                    </mat-accordion>
                                 </div>
                                 <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
                                 </div>
                             </div>
                             <!-- 2nd Form -->       
                             <div class="row">
-                                <div class="col-sm-6 col-md-4">
+                                <div class="col-sm-6 col-md-2">
                                 </div>
                                 <!-- ALT -->
-                                <div class="form2 col-sm-6 col-md-1">
+                                <div class="form2 col-sm-6 col-md-2">
                                     <mat-form-field appearance="outline">
                                         <mat-label>ALT</mat-label>
-                                        <input matInput placeholder="1d100">
+                                        <input matInput placeholder="1d100" type="number" formControlName="ALT" required>
                                     </mat-form-field>
                                 </div>
                                 <!-- PES -->
-                                <div class="form2 col-sm-6 col-md-1">
+                                <div class="form2 col-sm-6 col-md-2">
                                     <mat-form-field appearance="outline">
                                         <mat-label>PES</mat-label>
-                                        <input matInput placeholder="1d100">
+                                        <input matInput placeholder="1d100" type="number" formControlName="PES" required>
                                     </mat-form-field>
                                 </div>
                                 <!-- FAMpos -->
-                                <div class="form2 col-sm-6 col-md-1">
+                                <div class="form2 col-sm-6 col-md-2">
                                     <mat-form-field appearance="outline">
                                         <mat-label>FAMpos</mat-label>
-                                        <input matInput placeholder="1d100">
+                                        <input matInput placeholder="1d100" type="number" formControlName="FAMpos" required>
                                     </mat-form-field>
                                 </div>
                                 <!-- FAMneg -->
-                                <div class="form2 col-sm-6 col-md-1">
+                                <div class="form2 col-sm-6 col-md-2">
                                     <mat-form-field appearance="outline">
                                         <mat-label>FAMneg</mat-label>
-                                        <input matInput placeholder="1d100">
+                                        <input matInput placeholder="1d100" type="number" formControlName="FAMneg" required>
                                     </mat-form-field>
                                 </div>
-                                <div class="col-sm-6 col-md-4">
+                                <div class="col-sm-6 col-md-2">
                                 </div>
                             </div>
                         </div>
-                        
+                        <!-- Button -->
                         <div>
                           <button mat-button matStepperNext>Next</button>
                         </div>
@@ -258,7 +253,7 @@
                     </mat-step>
                     <mat-step [stepControl]="secondFormGroup">
                       <form [formGroup]="secondFormGroup">
-                        <ng-template matStepLabel>Fill out your address</ng-template>
+                        <ng-template matStepLabel>Fill out your rolled data</ng-template>
                         <mat-form-field>
                           <mat-label>Address</mat-label>
                           <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
@@ -276,6 +271,7 @@
                       <div>
                         <button mat-button matStepperPrevious>Back</button>
                         <button mat-button (click)="stepper.reset()">Reset</button>
+                        <button mat-button (click)="submit()">Submit</button>
                       </div>
                     </mat-step>
                 </mat-vertical-stepper>

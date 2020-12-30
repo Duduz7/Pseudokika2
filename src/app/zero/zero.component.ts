@@ -16,13 +16,45 @@ export class ZeroComponent implements OnInit {
 // Material Stepper
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
+      // CRCs Group
+      FUE: ['', Validators.required],
+      CON: ['', Validators.required],
+      DES: ['', Validators.required],
+      INT: ['', Validators.required],
+      SAB: ['', Validators.required],
+      CAR: ['', Validators.required],
+      ENE: ['', Validators.required],
+      MOR: ['', Validators.required],
+      MOV: ['', Validators.required],
+      VAN: ['', Validators.required],
+      LIV: ['', Validators.required],
+      ACE: ['', Validators.required],
+      // LINs Group
+      LINest: ['', Validators.required],
+      LINfam: ['', Validators.required],
+      LINocu: ['', Validators.required],
+      LINrec: ['', Validators.required],
+      // SENs Group
+      Vista: ['', Validators.required],
+      Oido: ['', Validators.required],
+      Olfato: ['', Validators.required],
+      Gusto: ['', Validators.required],
+      Tacto: ['', Validators.required],
+      // Final firstForm Group
+      ALT: ['', Validators.required],
+      PES: ['', Validators.required],
+      FAMpos: ['', Validators.required],
+      FAMneg: ['', Validators.required],
+
     });
     this.secondFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
   }
-
+  submit(){
+    console.log(this.firstFormGroup.value);
+    console.log(this.secondFormGroup.value);
+}
 // Material Expansion Panel  
   step = 0;
   setStep(index: number) {
