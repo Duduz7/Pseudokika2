@@ -13,7 +13,7 @@ export class ZeroComponent implements OnInit {
   secondFormGroup: FormGroup;
 
   constructor(private _formBuilder: FormBuilder) { }
-// Material Stepper
+  // Material Stepper
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
       // CRCs Group
@@ -51,11 +51,12 @@ export class ZeroComponent implements OnInit {
       secondCtrl: ['', Validators.required]
     });
   }
+  // Print Zero values
   submit(){
-    console.log(this.firstFormGroup.value);
-    console.log(this.secondFormGroup.value);
-}
-// Material Expansion Panel  
+      console.log(this.firstFormGroup.value);
+      console.log(this.secondFormGroup.value);
+  }
+  // Material Steps between Expansion Panels
   step = 0;
   setStep(index: number) {
     this.step = index;

@@ -268,13 +268,14 @@
                     <mat-step>
                       <ng-template matStepLabel>Done</ng-template>
                       <p>You are now done.</p>
-                      <!-- Returned FormList -->
+                    <!-- Returned FormList -->
                       <mat-list>
                         <mat-list-item> <strong>CRCs:</strong> {{ this.firstFormGroup.value.FUE }}</mat-list-item>
                         <mat-list-item> <strong>LINs:</strong> {{ this.firstFormGroup.value.LINest }}</mat-list-item>
                         <mat-list-item> <strong>SENs:</strong> {{ this.secondFormGroup.value.Vista }}</mat-list-item>
                         <mat-list-item> <strong>ALT:</strong> {{ this.secondFormGroup.value.ALT }}</mat-list-item>
                        </mat-list>
+                    <!-- Final Mat-Stepper Buttons -->
                       <div>
                         <button mat-button matStepperPrevious>Back</button>
                         <button mat-button (click)="stepper.reset()">Reset</button>
