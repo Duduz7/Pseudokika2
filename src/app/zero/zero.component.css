@@ -1,13 +1,13 @@
-#zero {background-color: lightgray; height: 100%; display: flex; justify-content: center; align-items: initial;}
-.form1 {margin: 0 0;}
-.form2 {margin:0 0 0 3px;}
-.forms-fap {float:left; margin: 0 15px 0 -5px;}
+#zero {background-color: lightgray; height: auto; display: flex; justify-content: center; align-items: initial;}
+.form1 {margin: 0;}
 .main-title {padding: 20px 0 0 0;text-align: center; font-size: 40px; font-weight: 350;}
 .header {background-color: gray; background: gray !important;}
 .title {color: white; font-weight: 400; font-size: 24px;}
 .description {color: white; font-weight: 300}
-.mat-form-field {margin: 10px 0 0 6px; width: 100px; font-size: 16px;}
+.mat-form-field {margin: 0 0 0 3px; padding: 10px 0 0 6px; width: 100px; font-size: 16px;}
 .mat-stepper-vertical {margin-top: 8px; border-radius: 20px;}
+.lin {margin: 0px;}
+.mat-field-2 {width: 90px; margin: 0 0 0 1px;}
 
 /* Media responsive */
 
@@ -17,18 +17,27 @@
 }
 /* col-sm- (portrait tablets and large phones, 600px and up) */ 
 @media only screen and (min-width: 600px) {
-
+    .lin {display: none;}
 }
 /* col-md- (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    .row {margin: 0 0 0 -6px;}
+    .mat-form-field {width: 70px; font-size: 13px;}
+    .mat-field-2 {width: 78px;}
+    .mat-label-apf {font-size: 10px;}
+    .lin-margin {margin: 0 0 0 -8px;}
 }
 /* col-lg- (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .row {margin: 0 0 0 -20px;}
-
+    .row {margin: 0 0 0 -30px;}
+    .mat-form-field {width: 80px; font-size: 15px;}
+    .mat-field-2 {width: 85px; font-size: 14px;}
+    .lin {display: table;}
+    .mat-label-apf {font-size: 12px;}
 } 
 /* col-xl- (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+@media only screen and (min-width: 1440px) {
+    .row {margin: 0;}
+    .mat-form-field {width: 100px; font-size: 17px;}
+    .mat-label-apf {font-size: 16px;}
 } 

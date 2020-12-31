@@ -4,11 +4,11 @@
         <div class="row">
             <h1 class="main-title">Zero Beta</h1>
         </div>
-        <div class="row">   
-            <div class="col-md-1">
+        <div class="row">
+            <div class="col-md-1 col-lg-2 col-xl-1">
             </div>
             <!-- MatStepper -->
-            <div class="col-sm-12 col-md-10">
+            <div class="col-sm-12 col-md-10 col-lg-8 col-xl-10">
                 <mat-vertical-stepper linear #stepper>
                     <mat-step [stepControl]="firstFormGroup">
                       <form [formGroup]="firstFormGroup">
@@ -16,17 +16,17 @@
                         <div class="container-fluid">
                             <!-- CRCs -->
                             <div class="row">
-                                <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
+                                <div class="col-md-1">
                                 </div>
-                                <div class="form1 col-sm-10 col-md-6 col-lg-8 col-xl-10">
+                                <div class="form1 col-sm-12 col-md-10">
                                     <mat-expansion-panel expanded hideToggle>
                                         <mat-expansion-panel-header class="header">
-                                        <mat-panel-title class="title">
-                                            CRCs
-                                        </mat-panel-title>
-                                        <mat-panel-description class="description">
-                                            Insert your 12d100 results
-                                        </mat-panel-description>
+                                            <mat-panel-title class="title">
+                                                CRCs
+                                            </mat-panel-title>
+                                            <mat-panel-description class="description">
+                                                Insert your 12d100 results
+                                            </mat-panel-description>
                                         </mat-expansion-panel-header>
                                         <div class="row">   
                                             <div class="col-xs-6 col-md-3 col-lg-2">
@@ -104,144 +104,160 @@
                                         </div>         
                                     </mat-expansion-panel>
                                 </div>    
-                                <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
+                                <div class="col-md-1">
                                 </div>
                             </div>
                             <!-- LINs -->        
                             <div class="row">
-                                <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
+                                <div class="col-md-1">
                                 </div>
-                                <div class="form1 col-sm-1 col-sm-10 col-md-6 col-lg-8 col-xl-10">
-                                        <mat-expansion-panel expanded hideToggle>
-                                            <mat-expansion-panel-header class="header">
-                                                <mat-panel-title class="title">
-                                                LINs
-                                                </mat-panel-title>
-                                                <mat-panel-description class="description">
-                                                    Insert your 1d18 and 3d12 results
-                                                </mat-panel-description>
-                                            </mat-expansion-panel-header>
-                                            <div class="container-fluid">
-                                                <div class="row">   
-                                                    <div class="col-xs-5 col-md-3">
-                                                        <mat-form-field appearance="fill">
-                                                            <mat-label>LINest</mat-label>
-                                                            <input matInput placeholder= "1d18" type="number" formControlName="LINest" required>
-                                                        </mat-form-field>
-                                                    </div>
-                                                    <div class="col-xs-5 col-md-3">
-                                                        <mat-form-field appearance="fill">
-                                                            <mat-label>LINfam</mat-label>
-                                                            <input matInput placeholder= "1d12" type="number" formControlName="LINfam" required>
-                                                        </mat-form-field>
-                                                    </div>
-                                                    <div class="col-xs-5 col-md-3">
-                                                        <mat-form-field appearance="fill">
-                                                            <mat-label>LINocu</mat-label>
-                                                            <input matInput placeholder= "1d12" type="number" formControlName="LINocu" required>
-                                                        </mat-form-field>
-                                                    </div>
-                                                    <div class="col-xs-5 col-md-3">
-                                                        <mat-form-field appearance="fill">
-                                                            <mat-label>LINrec</mat-label>
-                                                            <input matInput placeholder= "1d12" type="number" formControlName="LINrec" required>
-                                                        </mat-form-field>
-                                                    </div>
+                                <div class="form1 col-sm-12 col-md-10">
+                                    <mat-expansion-panel expanded hideToggle>
+                                        <mat-expansion-panel-header class="header">
+                                            <mat-panel-title class="title">
+                                            LINs
+                                            </mat-panel-title>
+                                            <mat-panel-description class="description">
+                                                Insert your 1d18 and 3d12 results
+                                            </mat-panel-description>
+                                        </mat-expansion-panel-header>
+                                        <div class="container-fluid">
+                                            <div class="row lin-margin">   
+                                                <div class="lin col-xs-1 col-lg-2">
                                                 </div>
-                                            </div>    
-                                        </mat-expansion-panel>
+                                                <div class="col-sm-5 col-md-3 col-lg-2">
+                                                    <mat-form-field class="mat-field-2" appearance="fill">
+                                                        <mat-label>LINest</mat-label>
+                                                        <input matInput placeholder= "1d18" type="number" formControlName="LINest" required>
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-5 col-md-3 col-lg-2">
+                                                    <mat-form-field class="mat-field-2" appearance="fill">
+                                                        <mat-label>LINfam</mat-label>
+                                                        <input matInput placeholder= "1d12" type="number" formControlName="LINfam" required>
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-5 col-md-3 col-lg-2">
+                                                    <mat-form-field class="mat-field-2" appearance="fill">
+                                                        <mat-label>LINocu</mat-label>
+                                                        <input matInput placeholder= "1d12" type="number" formControlName="LINocu" required>
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-5 col-md-3 col-lg-2">
+                                                    <mat-form-field class="mat-field-2" appearance="fill">
+                                                        <mat-label>LINrec</mat-label>
+                                                        <input matInput placeholder= "1d12" type="number" formControlName="LINrec" required>
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="lin col-xs-1 col-lg-2">
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </mat-expansion-panel>
                                 </div>
-                                <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
+                                <div class="col-md-1">
                                 </div> 
                             </div>    
                             <!-- SENs -->
                             <div class="row">
-                                <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
+                                <div class="col-md-1 col-lg-1">
                                 </div>
-                                <div class="form1 col-sm-1 col-sm-10 col-md-6 col-lg-8 col-xl-10">
-                                        <mat-expansion-panel expanded hideToggle>
-                                            <mat-expansion-panel-header class="header">
+                                <div class="form1 col-sm-12 col-md-10 col-lg-10">
+                                    <mat-expansion-panel expanded hideToggle>
+                                        <mat-expansion-panel-header class="header">
                                             <mat-panel-title class="title">
                                                 SENs
                                             </mat-panel-title>
                                             <mat-panel-description class="description">
                                                 Insert your 5d10 results
                                             </mat-panel-description>
-                                            </mat-expansion-panel-header>
-                                            <div class="container-fluid">
-                                                <div class="row">   
-                                                    <div class="col-lg-1">
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
-                                                        <mat-form-field appearance="fill">
-                                                            <mat-label>Vista</mat-label>
-                                                            <input matInput  matInput placeholder="1d10" type="number" formControlName="Vista" required>
-                                                        </mat-form-field>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
-                                                        <mat-form-field appearance="fill">
-                                                            <mat-label>Oido</mat-label>
-                                                            <input matInput placeholder="1d10" type="number" formControlName="Oido" required>
-                                                        </mat-form-field>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
-                                                        <mat-form-field appearance="fill">
-                                                            <mat-label>Olfato</mat-label>
-                                                            <input matInput placeholder="1d10" type="number" formControlName="Olfato" required>
-                                                        </mat-form-field>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
-                                                        <mat-form-field appearance="fill">
-                                                            <mat-label>Gusto</mat-label>
-                                                            <input matInput placeholder="1d10" type="number" formControlName="Gusto" required>
-                                                        </mat-form-field>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
-                                                        <mat-form-field appearance="fill">
-                                                            <mat-label>Tacto</mat-label>
-                                                            <input matInput placeholder="1d10" type="number" formControlName="Tacto" required>
-                                                        </mat-form-field>
-                                                    </div>
+                                        </mat-expansion-panel-header>
+                                        <div class="container-fluid">
+                                            <div class="row">   
+                                                <div class="lin col-lg-1">
                                                 </div>
-                                            </div>  
-                                        </mat-expansion-panel>
+                                                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
+                                                    <mat-form-field appearance="fill">
+                                                        <mat-label>Vista</mat-label>
+                                                        <input matInput  matInput placeholder="1d10" type="number" formControlName="Vista" required>
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
+                                                    <mat-form-field appearance="fill">
+                                                        <mat-label>Oido</mat-label>
+                                                        <input matInput placeholder="1d10" type="number" formControlName="Oido" required>
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
+                                                    <mat-form-field appearance="fill">
+                                                        <mat-label>Olfato</mat-label>
+                                                        <input matInput placeholder="1d10" type="number" formControlName="Olfato" required>
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
+                                                    <mat-form-field appearance="fill">
+                                                        <mat-label>Gusto</mat-label>
+                                                        <input matInput placeholder="1d10" type="number" formControlName="Gusto" required>
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-2">
+                                                    <mat-form-field appearance="fill">
+                                                        <mat-label>Tacto</mat-label>
+                                                        <input matInput placeholder="1d10" type="number" formControlName="Tacto" required>
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="lin col-lg-1">
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </mat-expansion-panel>
                                 </div>
-                                <div class="col-sm-1 col-md-3 col-lg-2 col-xl-1">
+                                <div class="col-md-1 col-lg-1">
                                 </div>
                             </div>
-                            <!-- 2nd Form -->       
+                            <!-- ALT, PES, FAMs -->       
                             <div class="row">
-                                <div class="col-sm-6 col-md-2">
+                                <div class="col-md-1">
                                 </div>
-                                <!-- ALT -->
-                                <div class="form2 col-sm-6 col-md-2">
-                                    <mat-form-field appearance="outline">
-                                        <mat-label>ALT</mat-label>
-                                        <input matInput placeholder="1d100" type="number" formControlName="ALT" required>
-                                    </mat-form-field>
+                                <div class="form1 col-sm-12 col-md-10">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-2 col-lg-2">
+                                            </div>
+                                            <!-- ALT -->
+                                            <div class="form1 col-sm-6 col-md-2 col-lg-2">
+                                                <mat-form-field appearance="outline" class="mat-label-apf">
+                                                    <mat-label>ALT</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="ALT" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <!-- PES -->
+                                            <div class="form1 col-sm-6 col-md-2 col-lg-2">
+                                                <mat-form-field appearance="outline" class="mat-label-apf">
+                                                    <mat-label>PES</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="PES" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <!-- FAMpos -->
+                                            <div class="form1 col-sm-6 col-md-2 col-lg-2">
+                                                <mat-form-field appearance="outline" class="mat-label-apf">
+                                                    <mat-label>FAMpos</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="FAMpos" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <!-- FAMneg -->
+                                            <div class="form1 col-sm-6 col-md-2 col-lg-2">
+                                                <mat-form-field appearance="outline" class="mat-label-apf">
+                                                    <mat-label>FAMneg</mat-label>
+                                                    <input matInput placeholder="1d100" type="number" formControlName="FAMneg" required>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm-6 col-md-2 col-lg-2">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- PES -->
-                                <div class="form2 col-sm-6 col-md-2">
-                                    <mat-form-field appearance="outline">
-                                        <mat-label>PES</mat-label>
-                                        <input matInput placeholder="1d100" type="number" formControlName="PES" required>
-                                    </mat-form-field>
-                                </div>
-                                <!-- FAMpos -->
-                                <div class="form2 col-sm-6 col-md-2">
-                                    <mat-form-field appearance="outline">
-                                        <mat-label>FAMpos</mat-label>
-                                        <input matInput placeholder="1d100" type="number" formControlName="FAMpos" required>
-                                    </mat-form-field>
-                                </div>
-                                <!-- FAMneg -->
-                                <div class="form2 col-sm-6 col-md-2">
-                                    <mat-form-field appearance="outline">
-                                        <mat-label>FAMneg</mat-label>
-                                        <input matInput placeholder="1d100" type="number" formControlName="FAMneg" required>
-                                    </mat-form-field>
-                                </div>
-                                <div class="col-sm-6 col-md-2">
+                                <div class="col-md-1">
                                 </div>
                             </div>
                         </div>
@@ -284,7 +300,7 @@
                     </mat-step>
                 </mat-vertical-stepper>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 col-lg-2 col-xl-1">
             </div>
         </div>
     </div>
